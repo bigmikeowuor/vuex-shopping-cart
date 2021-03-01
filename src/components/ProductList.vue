@@ -5,6 +5,7 @@
 		<ul v-else>
 			<li v-for="product in products" :key="product.id">
 				{{ product.title }} - {{ product.price }}
+				<button @click="addProductToCart(product)">Add to Cart</button>
 			</li>
 		</ul>
 	</div>
@@ -16,6 +17,12 @@ export default {
 		return {
 			loading: false,
 		};
+	},
+
+	methods: {
+		addProductToCart(product) {
+			this.$store.dispatch('addProductToCart', product);
+		},
 	},
 
 	computed: {
