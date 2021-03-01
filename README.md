@@ -36,4 +36,4 @@ npm run lint
 
 The live site can be accessed at [this website][website]...
 
-[website]: https://vue-shopping-cart.s3.co.ke/
+[website]: https://vuex-shopping-cart.s3.co.ke/
