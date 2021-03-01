@@ -3,7 +3,7 @@
  */
 
 const _products = [
-	{ id: 1, title: 'iPad 4 Mini', price: 499.99, inventory: 2 },
+	{ id: 1, title: 'iPad 4 Mini', price: 499.99, inventory: 5 },
 	{ id: 2, title: 'H&M T-Shirt White', price: 9.99, inventory: 21 },
 	{ id: 3, title: 'Charli XCX - Sucker CD', price: 20.99, inventory: 34 },
 ];
