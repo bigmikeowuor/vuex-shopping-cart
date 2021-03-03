@@ -17,15 +17,15 @@ import { mapState, mapGetters, mapActions } from 'vuex';
 
 export default {
 	methods: {
-		...mapActions(['checkout']),
+		...mapActions('cart', ['checkout']),
 	},
 
 	computed: {
-		...mapState({
-			checkoutStatus: (state) => state.cart.checkoutStatus,
+		...mapState('cart', {
+			checkoutStatus: (state) => state.checkoutStatus,
 		}),
 
-		...mapGetters({
+		...mapGetters('cart', {
 			products: 'cartProducts',
 			total: 'cartTotal',
 		}),
